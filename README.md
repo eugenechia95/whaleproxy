@@ -21,14 +21,14 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 
 **2.  GET /whale/:id**
 ```
-~ curl -X GET https://whalemarket.saleswhale.io/whales/1 -H "Authorization: Bearer TOKEN"
+~ curl -X GET http://127.0.0.1:8000/whales/69 -H "Authorization: Bearer TOKEN"
 ```
 **Expected Response:**
 {"whale":{"id":69,"name":"pinkwhale","country":"India"}}
 
 **3.  GET /whales**
 ```
-~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
+~ curl -X GET http://127.0.0.1:8000/whales -H "Authorization: Bearer TOKEN"
 ```
 **Expected Response:**
 {"whales":[{"id":69,"name":"pinkwhale","country":"India"}]}
@@ -37,7 +37,7 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 
   *Forces Sync of of every whale in whalemarket*
 ```
-~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
+~ curl -X PUT http://127.0.0.1:8000/whales -H "Authorization: Bearer TOKEN"
 ```
 **Expected Response:**
 All Whales Synced!
@@ -46,12 +46,12 @@ All Whales Synced!
   
   *Purges cache of service*
 ```
-~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
+~ curl -X DELETE http://127.0.0.1:8000/whales -H "Authorization: Bearer TOKEN"
 ```
 
 **6.  GET /hitratio**
 ```
-~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
+~ curl -X GET http://127.0.0.1:8000/hitratio -H "Authorization: Bearer TOKEN"
 ```
 **Expected Response:**
 Total Retrieval Request: 4 
