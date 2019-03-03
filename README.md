@@ -12,28 +12,28 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 
 ## Available API EndPoints
 
-1.  POST /whales
+**1.  POST /whales**
 ```
 ~ curl -X POST https://whalemarket.saleswhale.io/whales -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN" -d '{"name": "orca", "country": "Atlantis" }'
 ```
 **Expected Response:**
 {"whale":{"id":69,"name":"pinkwhale","country":"India"}}
 
-2.  GET /whale/:id
+**2.  GET /whale/:id**
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales/1 -H "Authorization: Bearer TOKEN"
 ```
 **Expected Response:**
 {"whale":{"id":69,"name":"pinkwhale","country":"India"}}
 
-3.  GET /whales
+**3.  GET /whales**
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
 ```
 **Expected Response:**
 {"whales":[{"id":69,"name":"pinkwhale","country":"India"}]}
 
-4.  PUT /whales 
+**4.  PUT /whales** 
 *Forces Sync of of every whale in whalemarket*
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
@@ -41,13 +41,13 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 **Expected Response:**
 All Whales Synced!
 
-5.  DELETE /whales
+**5.  DELETE /whales**
 *Purges cache of service*
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
 ```
 
-6.  GET /hitratio
+**6.  GET /hitratio**
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
 ```
