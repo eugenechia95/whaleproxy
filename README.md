@@ -14,7 +14,7 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 
 **1.  POST /whales**
 ```
-~ curl -X POST https://whalemarket.saleswhale.io/whales -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN" -d '{"name": "orca", "country": "Atlantis" }'
+~ curl -X POST https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN" -d '{"name": "orca", "country": "Atlantis" }'
 ```
 **Expected Response:**
 {"whale":{"id":69,"name":"pinkwhale","country":"India"}}
