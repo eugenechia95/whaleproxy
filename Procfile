@@ -1,0 +1,1 @@
+web: gunicorn whaleproxy.wsgi --log-file -
