@@ -34,7 +34,8 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 {"whales":[{"id":69,"name":"pinkwhale","country":"India"}]}
 
 **4.  PUT /whales** 
-*Forces Sync of of every whale in whalemarket*
+
+  *Forces Sync of of every whale in whalemarket*
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
 ```
@@ -42,7 +43,8 @@ Once server is running, user can use cURL to make HTTP Requests to the proxy ser
 All Whales Synced!
 
 **5.  DELETE /whales**
-*Purges cache of service*
+  
+  *Purges cache of service*
 ```
 ~ curl -X GET https://whalemarket.saleswhale.io/whales -H "Authorization: Bearer TOKEN"
 ```
