@@ -9,6 +9,7 @@ $ docker-compose up --build
 
 ```
 Once server is running, user can use cURL to make HTTP Requests to the proxy service.
+If unable to successfully build, check firewall settings and disable temporarily if required.
 
 ## Available API EndPoints
 
